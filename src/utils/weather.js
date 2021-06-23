@@ -18,7 +18,8 @@ const weather=(address,callback) => {
             callback(undefined,{
                 desc: response.body.current.weather_descriptions[0],
                 curr_temp: response.body.current.temperature,
-                feels_like: response.body.current.feelslike
+                feels_like: response.body.current.feelslike,
+                humidity: response.body.current.humidity
             })
         }
     })

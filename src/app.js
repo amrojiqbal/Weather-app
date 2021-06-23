@@ -102,7 +102,7 @@ app.get('/weather',(req,res) => {
                 })
             }
             res.send({
-                Forecast: 'It is ' + forecast_data.desc + '.Temperature is: ' + forecast_data.curr_temp + ' degree.And it feels like ' + forecast_data.feels_like + ' degree.',
+                Forecast: 'It is ' + forecast_data.desc + '. Temperature is: ' + forecast_data.curr_temp + ' degree. And it feels like ' + forecast_data.feels_like + ' degree. Humidity is: ' + forecast_data.humidity + '%.',
                 Location: data.place,
                 Address: address
             })
