@@ -4,6 +4,7 @@ const express=require('express')
 const hbs=require('hbs')
 const geocode=require('./utils/geocode')
 const weather=require('./utils/weather')
+const port=process.env.PORT || 3000
 
 const { title } = require('process')
 
@@ -134,6 +135,6 @@ app.get('/*',(req,res) => {
 })
 
 
-app.listen(3000,() => {
-    console.log('server is listening at port 3000')
+app.listen(port,() => {
+    console.log('server is listening at port ' + port)
 })

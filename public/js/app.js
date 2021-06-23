@@ -14,7 +14,7 @@ formSelector.addEventListener('submit',(e) => {
     msg_1.textContent='Loading...'
     msg_2.textContent=''
 
-    fetch('http://localhost:3000/weather?search='+address).then((response) => {
+    fetch('/weather?search=' + address).then((response) => {
     response.json().then((body) => {
         // console.log(body)
 
